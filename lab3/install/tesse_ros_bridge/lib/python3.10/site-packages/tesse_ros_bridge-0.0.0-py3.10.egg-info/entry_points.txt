@@ -1,0 +1,5 @@
+[console_scripts]
+key_teleop = key_teleop.key_teleop:main
+quadrotor_control_interface = tesse_ros_bridge.quadrotor_control_interface:main
+tesse_ros_node = tesse_ros_bridge.tesse_ros_node:main
+

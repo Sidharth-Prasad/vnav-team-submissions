@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tesse_msgs/srv/SceneRequestService.srv
+// generated code does not contain a copyright notice
+
+
+module tesse_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Scene Change Request Service")
+    struct SceneRequestService_Request {
+      @verbatim (language="comment", text=
+        "Request fields" "\n"
+        "integer id of scene request")
+      int8 id;
+    };
+    struct SceneRequestService_Response {
+      @verbatim (language="comment", text=
+        "Response fields" "\n"
+        "true if scene change was completed without exception, false otw")
+      boolean success;
+    };
+  };
+};

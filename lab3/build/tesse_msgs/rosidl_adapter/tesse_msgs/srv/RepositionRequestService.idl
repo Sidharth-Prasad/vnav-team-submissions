@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tesse_msgs/srv/RepositionRequestService.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose.idl"
+
+module tesse_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Reposition Request Service")
+    struct RepositionRequestService_Request {
+      @verbatim (language="comment", text=
+        "Request fields")
+      geometry_msgs::msg::Pose pose;
+    };
+    struct RepositionRequestService_Response {
+      @verbatim (language="comment", text=
+        "Response fields" "\n"
+        "true if the reposition happens without exception, false otw")
+      boolean success;
+    };
+  };
+};

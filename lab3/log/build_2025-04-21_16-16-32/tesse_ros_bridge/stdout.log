@@ -1,0 +1,70 @@
+running egg_info
+creating ../build/tesse_ros_bridge/tesse_ros_bridge.egg-info
+writing ../build/tesse_ros_bridge/tesse_ros_bridge.egg-info/PKG-INFO
+writing dependency_links to ../build/tesse_ros_bridge/tesse_ros_bridge.egg-info/dependency_links.txt
+writing entry points to ../build/tesse_ros_bridge/tesse_ros_bridge.egg-info/entry_points.txt
+writing requirements to ../build/tesse_ros_bridge/tesse_ros_bridge.egg-info/requires.txt
+writing top-level names to ../build/tesse_ros_bridge/tesse_ros_bridge.egg-info/top_level.txt
+writing manifest file '../build/tesse_ros_bridge/tesse_ros_bridge.egg-info/SOURCES.txt'
+reading manifest file '../build/tesse_ros_bridge/tesse_ros_bridge.egg-info/SOURCES.txt'
+writing manifest file '../build/tesse_ros_bridge/tesse_ros_bridge.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build
+creating /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib
+creating /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/tesse_ros_bridge
+copying tesse_ros_bridge/__init__.py -> /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/tesse_ros_bridge
+copying tesse_ros_bridge/utils.py -> /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/tesse_ros_bridge
+copying tesse_ros_bridge/noise_simulator.py -> /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/tesse_ros_bridge
+copying tesse_ros_bridge/quadrotor_control_interface.py -> /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/tesse_ros_bridge
+copying tesse_ros_bridge/consts.py -> /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/tesse_ros_bridge
+copying tesse_ros_bridge/tesse_ros_node.py -> /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/tesse_ros_bridge
+creating /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/key_teleop
+copying key_teleop/__init__.py -> /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/key_teleop
+copying key_teleop/key_teleop.py -> /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/key_teleop
+copying key_teleop/alternative_key_teleop.py -> /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/key_teleop
+running install
+running install_lib
+creating /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge
+copying /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/tesse_ros_bridge/__init__.py -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge
+copying /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/tesse_ros_bridge/utils.py -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge
+copying /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/tesse_ros_bridge/noise_simulator.py -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge
+copying /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/tesse_ros_bridge/quadrotor_control_interface.py -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge
+copying /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/tesse_ros_bridge/consts.py -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge
+copying /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/tesse_ros_bridge/tesse_ros_node.py -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge
+creating /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/key_teleop
+copying /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/key_teleop/__init__.py -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/key_teleop
+copying /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/key_teleop/key_teleop.py -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/key_teleop
+copying /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/key_teleop/alternative_key_teleop.py -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/key_teleop
+byte-compiling /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge/utils.py to utils.cpython-310.pyc
+byte-compiling /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge/noise_simulator.py to noise_simulator.cpython-310.pyc
+byte-compiling /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge/quadrotor_control_interface.py to quadrotor_control_interface.cpython-310.pyc
+byte-compiling /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge/consts.py to consts.cpython-310.pyc
+byte-compiling /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge/tesse_ros_node.py to tesse_ros_node.cpython-310.pyc
+byte-compiling /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/key_teleop/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/key_teleop/key_teleop.py to key_teleop.cpython-310.pyc
+byte-compiling /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/key_teleop/alternative_key_teleop.py to alternative_key_teleop.cpython-310.pyc
+running install_data
+creating /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/ament_index
+creating /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/ament_index/resource_index
+creating /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/ament_index/resource_index/packages
+copying resource/tesse_ros_bridge -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/ament_index/resource_index/packages
+copying package.xml -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge
+creating /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/launch
+copying launch/tesse_quadrotor_bridge.launch.yaml -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/launch
+creating /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/config
+copying config/lidar_params.yaml -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/config
+copying config/noise_model.yaml -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/config
+copying config/camera_params.yaml -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/config
+copying config/params.yaml -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/config
+copying config/object_spawn_params.yaml -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/config
+copying config/map_tfs.yaml -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/config
+copying config/tesse_agent_params.yaml -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/config
+running install_egg_info
+Copying ../build/tesse_ros_bridge/tesse_ros_bridge.egg-info to /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge-0.0.0-py3.10.egg-info
+running install_scripts
+Installing key_teleop script to /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/tesse_ros_bridge
+Installing quadrotor_control_interface script to /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/tesse_ros_bridge
+Installing tesse_ros_node script to /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/tesse_ros_bridge
+writing list of installed files to '/home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/install.log'

@@ -1,0 +1,4 @@
+source;share/tesse_msgs/local_setup.bash
+source;share/tesse_msgs/local_setup.dsv
+source;share/tesse_msgs/local_setup.sh
+source;share/tesse_msgs/local_setup.zsh

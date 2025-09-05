@@ -1,0 +1,36 @@
+[0.901s] Invoking command in '/home/zengine/VNAV-labs/lab3/tesse-interface': PYTHONPATH=/home/zengine/VNAV-labs/lab3/build/tesse/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zengine/VNAV-labs/lab3/install/tesse/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/tesse build --build-base /home/zengine/VNAV-labs/lab3/build/tesse/build install --record /home/zengine/VNAV-labs/lab3/build/tesse/install.log --single-version-externally-managed
+[1.024s] running egg_info
+[1.024s] creating ../build/tesse/tesse.egg-info
+[1.024s] writing ../build/tesse/tesse.egg-info/PKG-INFO
+[1.024s] writing dependency_links to ../build/tesse/tesse.egg-info/dependency_links.txt
+[1.025s] writing requirements to ../build/tesse/tesse.egg-info/requires.txt
+[1.025s] writing top-level names to ../build/tesse/tesse.egg-info/top_level.txt
+[1.025s] writing manifest file '../build/tesse/tesse.egg-info/SOURCES.txt'
+[1.025s] reading manifest file '../build/tesse/tesse.egg-info/SOURCES.txt'
+[1.025s] adding license file 'LICENSE'
+[1.026s] writing manifest file '../build/tesse/tesse.egg-info/SOURCES.txt'
+[1.026s] running build
+[1.026s] running build_py
+[1.026s] creating /home/zengine/VNAV-labs/lab3/build/tesse/build
+[1.026s] creating /home/zengine/VNAV-labs/lab3/build/tesse/build/lib
+[1.026s] creating /home/zengine/VNAV-labs/lab3/build/tesse/build/lib/tesse
+[1.026s] copying src/tesse/__init__.py -> /home/zengine/VNAV-labs/lab3/build/tesse/build/lib/tesse
+[1.026s] copying src/tesse/env.py -> /home/zengine/VNAV-labs/lab3/build/tesse/build/lib/tesse
+[1.056s] copying src/tesse/utils.py -> /home/zengine/VNAV-labs/lab3/build/tesse/build/lib/tesse
+[1.067s] copying src/tesse/msgs.py -> /home/zengine/VNAV-labs/lab3/build/tesse/build/lib/tesse
+[1.081s] running install
+[1.081s] running install_lib
+[1.082s] creating /home/zengine/VNAV-labs/lab3/install/tesse/lib/python3.10/site-packages/tesse
+[1.082s] copying /home/zengine/VNAV-labs/lab3/build/tesse/build/lib/tesse/__init__.py -> /home/zengine/VNAV-labs/lab3/install/tesse/lib/python3.10/site-packages/tesse
+[1.082s] copying /home/zengine/VNAV-labs/lab3/build/tesse/build/lib/tesse/env.py -> /home/zengine/VNAV-labs/lab3/install/tesse/lib/python3.10/site-packages/tesse
+[1.082s] copying /home/zengine/VNAV-labs/lab3/build/tesse/build/lib/tesse/utils.py -> /home/zengine/VNAV-labs/lab3/install/tesse/lib/python3.10/site-packages/tesse
+[1.082s] copying /home/zengine/VNAV-labs/lab3/build/tesse/build/lib/tesse/msgs.py -> /home/zengine/VNAV-labs/lab3/install/tesse/lib/python3.10/site-packages/tesse
+[1.082s] byte-compiling /home/zengine/VNAV-labs/lab3/install/tesse/lib/python3.10/site-packages/tesse/__init__.py to __init__.cpython-310.pyc
+[1.082s] byte-compiling /home/zengine/VNAV-labs/lab3/install/tesse/lib/python3.10/site-packages/tesse/env.py to env.cpython-310.pyc
+[1.083s] byte-compiling /home/zengine/VNAV-labs/lab3/install/tesse/lib/python3.10/site-packages/tesse/utils.py to utils.cpython-310.pyc
+[1.083s] byte-compiling /home/zengine/VNAV-labs/lab3/install/tesse/lib/python3.10/site-packages/tesse/msgs.py to msgs.cpython-310.pyc
+[1.085s] running install_egg_info
+[1.086s] Copying ../build/tesse/tesse.egg-info to /home/zengine/VNAV-labs/lab3/install/tesse/lib/python3.10/site-packages/tesse-0.1.2-py3.10.egg-info
+[1.086s] running install_scripts
+[1.098s] writing list of installed files to '/home/zengine/VNAV-labs/lab3/build/tesse/install.log'
+[1.327s] Invoked command in '/home/zengine/VNAV-labs/lab3/tesse-interface' returned '0': PYTHONPATH=/home/zengine/VNAV-labs/lab3/build/tesse/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zengine/VNAV-labs/lab3/install/tesse/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/tesse build --build-base /home/zengine/VNAV-labs/lab3/build/tesse/build install --record /home/zengine/VNAV-labs/lab3/build/tesse/install.log --single-version-externally-managed

@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tesse_msgs/srv/ObjectSpawnRequestService.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose.idl"
+
+module tesse_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Object Spawn Request Service")
+    struct ObjectSpawnRequestService_Request {
+      @verbatim (language="comment", text=
+        "Request fields" "\n"
+        "integer id of object class")
+      int8 id;
+
+      geometry_msgs::msg::Pose pose;
+
+      sequence<double> params;
+    };
+    struct ObjectSpawnRequestService_Response {
+      @verbatim (language="comment", text=
+        "Response fields" "\n"
+        "true if object spawns without exception, false otw")
+      boolean success;
+    };
+  };
+};

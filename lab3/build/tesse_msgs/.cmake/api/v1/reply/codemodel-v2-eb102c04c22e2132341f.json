@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-5cc7851df4e3969155b7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "tesse_msgs__py",
+					"jsonFile" : "directory-tesse_msgs__py-034fd08c1ea345bee942.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/zengine/VNAV-labs/lab3/build/tesse_msgs/tesse_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "tesse_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_tesse_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_tesse_msgs_egg-1dd44748289f965242e5.json",
+					"name" : "ament_cmake_python_build_tesse_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_tesse_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_tesse_msgs-5aafd1ef65764caa2c3a.json",
+					"name" : "ament_cmake_python_copy_tesse_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tesse_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tesse_msgs-4c9f830b2dd6e9b13952.json",
+					"name" : "tesse_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tesse_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tesse_msgs__cpp-e56773ac6863a5de95c5.json",
+					"name" : "tesse_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "tesse_msgs__py::@793396dd95afdcee8630",
+					"jsonFile" : "target-tesse_msgs__py-ebd15ddf64796ffdc1df.json",
+					"name" : "tesse_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tesse_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tesse_msgs__rosidl_generator_c-5ece4dee0fb41b1a96ab.json",
+					"name" : "tesse_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tesse_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tesse_msgs__rosidl_generator_py-16e26ce2304e294ef48f.json",
+					"name" : "tesse_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tesse_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tesse_msgs__rosidl_typesupport_c-bd3a68f9f51259ad49c5.json",
+					"name" : "tesse_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tesse_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tesse_msgs__rosidl_typesupport_c__pyext-e61bdd19dd94e1106626.json",
+					"name" : "tesse_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tesse_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tesse_msgs__rosidl_typesupport_cpp-91827ceb8969ea0fc61c.json",
+					"name" : "tesse_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tesse_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tesse_msgs__rosidl_typesupport_fastrtps_c-4fc28d605e56e5739cef.json",
+					"name" : "tesse_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tesse_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tesse_msgs__rosidl_typesupport_fastrtps_c__pyext-adc47c8ea98dc9a30949.json",
+					"name" : "tesse_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tesse_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tesse_msgs__rosidl_typesupport_fastrtps_cpp-2d7eccd791b60963846f.json",
+					"name" : "tesse_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tesse_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tesse_msgs__rosidl_typesupport_introspection_c-21b438ee8925ea70f8ac.json",
+					"name" : "tesse_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tesse_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tesse_msgs__rosidl_typesupport_introspection_c__pyext-268ab9c87c2490f4ed40.json",
+					"name" : "tesse_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tesse_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tesse_msgs__rosidl_typesupport_introspection_cpp-b11ff9f53f20b8fcf97c.json",
+					"name" : "tesse_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tesse_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tesse_msgs_uninstall-0feed0c89473980609bc.json",
+					"name" : "tesse_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-e597ebc01bcb79633324.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/zengine/VNAV-labs/lab3/build/tesse_msgs",
+		"source" : "/home/zengine/VNAV-labs/lab3/tesse_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

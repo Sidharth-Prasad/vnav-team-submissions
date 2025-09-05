@@ -1,0 +1,9 @@
+{
+  "package_name": "tesse_msgs",
+  "non_idl_tuples": [
+    "/home/zengine/VNAV-labs/lab3/tesse_msgs:msg/CollisionStats.msg",
+    "/home/zengine/VNAV-labs/lab3/tesse_msgs:srv/ObjectSpawnRequestService.srv",
+    "/home/zengine/VNAV-labs/lab3/tesse_msgs:srv/RepositionRequestService.srv",
+    "/home/zengine/VNAV-labs/lab3/tesse_msgs:srv/SceneRequestService.srv"
+  ]
+}

@@ -1,0 +1,86 @@
+[0.022s] Invoking command in '/home/zengine/VNAV-labs/lab3/build/controller_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zengine/vnav_ws/src/install/tesse_ros_bridge:/opt/ros/humble /usr/bin/cmake /home/zengine/VNAV-labs/lab3/controller_pkg -DCMAKE_INSTALL_PREFIX=/home/zengine/VNAV-labs/lab3/install/controller_pkg
+[0.947s] -- The C compiler identification is GNU 11.4.0
+[1.526s] -- The CXX compiler identification is GNU 11.4.0
+[1.532s] -- Detecting C compiler ABI info
+[1.696s] -- Detecting C compiler ABI info - done
+[1.700s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.700s] -- Detecting C compile features
+[1.723s] -- Detecting C compile features - done
+[1.725s] -- Detecting CXX compiler ABI info
+[1.807s] -- Detecting CXX compiler ABI info - done
+[1.811s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.811s] -- Detecting CXX compile features
+[1.811s] -- Detecting CXX compile features - done
+[1.871s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.047s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.567s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[2.732s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.737s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.763s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.840s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.861s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.276s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.278s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.583s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.611s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.632s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.698s] -- Looking for pthread.h
+[3.854s] -- Looking for pthread.h - found
+[3.854s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.922s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.922s] -- Found Threads: TRUE  
+[4.119s] -- Found mav_msgs: 3.3.3 (/home/zengine/vnav_ws/src/install/mav_msgs/share/mav_msgs/cmake)
+[4.257s] -- Found trajectory_msgs: 4.2.4 (/opt/ros/humble/share/trajectory_msgs/cmake)
+[4.330s] -- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[4.378s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[4.379s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[4.379s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.636s] -- Found tf2_eigen: 0.25.12 (/opt/ros/humble/share/tf2_eigen/cmake)
+[4.656s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.719s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.719s] -- Configured cppcheck include dirs: 
+[4.719s] -- Configured cppcheck exclude dirs and/or files: 
+[4.719s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.720s] -- Added test 'lint_cmake' to check CMake code style
+[4.720s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.721s] -- Added test 'uncrustify' to check C / C++ code style
+[4.721s] -- Configured uncrustify additional arguments: 
+[4.721s] -- Added test 'xmllint' to check XML markup files
+[4.721s] -- Configuring done
+[4.764s] -- Generating done
+[4.767s] -- Build files have been written to: /home/zengine/VNAV-labs/lab3/build/controller_pkg
+[4.774s] Invoked command in '/home/zengine/VNAV-labs/lab3/build/controller_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zengine/vnav_ws/src/install/tesse_ros_bridge:/opt/ros/humble /usr/bin/cmake /home/zengine/VNAV-labs/lab3/controller_pkg -DCMAKE_INSTALL_PREFIX=/home/zengine/VNAV-labs/lab3/install/controller_pkg
+[4.775s] Invoking command in '/home/zengine/VNAV-labs/lab3/build/controller_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zengine/vnav_ws/src/install/tesse_ros_bridge:/opt/ros/humble /usr/bin/cmake --build /home/zengine/VNAV-labs/lab3/build/controller_pkg -- -j20 -l20
+[4.807s] [ 25%] [32mBuilding CXX object CMakeFiles/traj_publisher.dir/src/traj_publisher.cpp.o[0m
+[4.807s] [ 50%] [32mBuilding CXX object CMakeFiles/controller_node.dir/src/controller_node.cpp.o[0m
+[8.964s] [ 75%] [32m[1mLinking CXX executable traj_publisher[0m
+[9.324s] [ 75%] Built target traj_publisher
+[9.737s] [100%] [32m[1mLinking CXX executable controller_node[0m
+[9.813s] [100%] Built target controller_node
+[9.819s] Invoked command in '/home/zengine/VNAV-labs/lab3/build/controller_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zengine/vnav_ws/src/install/tesse_ros_bridge:/opt/ros/humble /usr/bin/cmake --build /home/zengine/VNAV-labs/lab3/build/controller_pkg -- -j20 -l20
+[9.820s] Invoking command in '/home/zengine/VNAV-labs/lab3/build/controller_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zengine/vnav_ws/src/install/tesse_ros_bridge:/opt/ros/humble /usr/bin/cmake --install /home/zengine/VNAV-labs/lab3/build/controller_pkg
+[9.825s] -- Install configuration: ""
+[9.825s] -- Installing: /home/zengine/VNAV-labs/lab3/install/controller_pkg/lib/controller_pkg/controller_node
+[9.825s] -- Set runtime path of "/home/zengine/VNAV-labs/lab3/install/controller_pkg/lib/controller_pkg/controller_node" to ""
+[9.825s] -- Installing: /home/zengine/VNAV-labs/lab3/install/controller_pkg/lib/controller_pkg/traj_publisher
+[9.826s] -- Set runtime path of "/home/zengine/VNAV-labs/lab3/install/controller_pkg/lib/controller_pkg/traj_publisher" to ""
+[9.826s] -- Installing: /home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/launch
+[9.826s] -- Installing: /home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/launch/traj_tracking.launch.py
+[9.842s] -- Installing: /home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/config
+[9.842s] -- Installing: /home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/config/params.yaml
+[9.842s] -- Installing: /home/zengine/VNAV-labs/lab3/install/controller_pkg/share/ament_index/resource_index/package_run_dependencies/controller_pkg
+[9.842s] -- Installing: /home/zengine/VNAV-labs/lab3/install/controller_pkg/share/ament_index/resource_index/parent_prefix_path/controller_pkg
+[9.842s] -- Installing: /home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/environment/ament_prefix_path.sh
+[9.842s] -- Installing: /home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/environment/ament_prefix_path.dsv
+[9.842s] -- Installing: /home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/environment/path.sh
+[9.842s] -- Installing: /home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/environment/path.dsv
+[9.842s] -- Installing: /home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/local_setup.bash
+[9.842s] -- Installing: /home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/local_setup.sh
+[9.842s] -- Installing: /home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/local_setup.zsh
+[9.842s] -- Installing: /home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/local_setup.dsv
+[9.842s] -- Installing: /home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/package.dsv
+[9.842s] -- Installing: /home/zengine/VNAV-labs/lab3/install/controller_pkg/share/ament_index/resource_index/packages/controller_pkg
+[9.842s] -- Installing: /home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/cmake/controller_pkgConfig.cmake
+[9.843s] -- Installing: /home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/cmake/controller_pkgConfig-version.cmake
+[9.843s] -- Installing: /home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/package.xml
+[9.844s] Invoked command in '/home/zengine/VNAV-labs/lab3/build/controller_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zengine/vnav_ws/src/install/tesse_ros_bridge:/opt/ros/humble /usr/bin/cmake --install /home/zengine/VNAV-labs/lab3/build/controller_pkg

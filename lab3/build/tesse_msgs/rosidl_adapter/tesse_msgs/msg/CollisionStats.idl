@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tesse_msgs/msg/CollisionStats.msg
+// generated code does not contain a copyright notice
+
+
+module tesse_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Collision Status and Statistics Message" "\n"
+      "if `is_collision` is True, then `object_name` will represent the object" "\n"
+      "  with which the agent is colliding.")
+    struct CollisionStats {
+      @verbatim (language="comment", text=
+        "Header header")
+      boolean is_collision;
+
+      string object_name;
+    };
+  };
+};

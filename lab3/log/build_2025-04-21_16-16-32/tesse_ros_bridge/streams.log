@@ -1,0 +1,72 @@
+[0.897s] Invoking command in '/home/zengine/VNAV-labs/lab3/tesse_ros_bridge': PYTHONPATH=/home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/tesse_ros_bridge build --build-base /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build install --record /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/install.log --single-version-externally-managed install_data
+[1.015s] running egg_info
+[1.015s] creating ../build/tesse_ros_bridge/tesse_ros_bridge.egg-info
+[1.015s] writing ../build/tesse_ros_bridge/tesse_ros_bridge.egg-info/PKG-INFO
+[1.015s] writing dependency_links to ../build/tesse_ros_bridge/tesse_ros_bridge.egg-info/dependency_links.txt
+[1.016s] writing entry points to ../build/tesse_ros_bridge/tesse_ros_bridge.egg-info/entry_points.txt
+[1.016s] writing requirements to ../build/tesse_ros_bridge/tesse_ros_bridge.egg-info/requires.txt
+[1.016s] writing top-level names to ../build/tesse_ros_bridge/tesse_ros_bridge.egg-info/top_level.txt
+[1.016s] writing manifest file '../build/tesse_ros_bridge/tesse_ros_bridge.egg-info/SOURCES.txt'
+[1.017s] reading manifest file '../build/tesse_ros_bridge/tesse_ros_bridge.egg-info/SOURCES.txt'
+[1.017s] writing manifest file '../build/tesse_ros_bridge/tesse_ros_bridge.egg-info/SOURCES.txt'
+[1.017s] running build
+[1.017s] running build_py
+[1.017s] creating /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build
+[1.017s] creating /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib
+[1.017s] creating /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/tesse_ros_bridge
+[1.017s] copying tesse_ros_bridge/__init__.py -> /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/tesse_ros_bridge
+[1.017s] copying tesse_ros_bridge/utils.py -> /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/tesse_ros_bridge
+[1.018s] copying tesse_ros_bridge/noise_simulator.py -> /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/tesse_ros_bridge
+[1.018s] copying tesse_ros_bridge/quadrotor_control_interface.py -> /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/tesse_ros_bridge
+[1.018s] copying tesse_ros_bridge/consts.py -> /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/tesse_ros_bridge
+[1.023s] copying tesse_ros_bridge/tesse_ros_node.py -> /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/tesse_ros_bridge
+[1.024s] creating /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/key_teleop
+[1.024s] copying key_teleop/__init__.py -> /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/key_teleop
+[1.024s] copying key_teleop/key_teleop.py -> /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/key_teleop
+[1.032s] copying key_teleop/alternative_key_teleop.py -> /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/key_teleop
+[1.033s] running install
+[1.033s] running install_lib
+[1.033s] creating /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge
+[1.033s] copying /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/tesse_ros_bridge/__init__.py -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge
+[1.033s] copying /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/tesse_ros_bridge/utils.py -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge
+[1.033s] copying /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/tesse_ros_bridge/noise_simulator.py -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge
+[1.033s] copying /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/tesse_ros_bridge/quadrotor_control_interface.py -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge
+[1.033s] copying /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/tesse_ros_bridge/consts.py -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge
+[1.034s] copying /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/tesse_ros_bridge/tesse_ros_node.py -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge
+[1.034s] creating /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/key_teleop
+[1.034s] copying /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/key_teleop/__init__.py -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/key_teleop
+[1.034s] copying /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/key_teleop/key_teleop.py -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/key_teleop
+[1.034s] copying /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build/lib/key_teleop/alternative_key_teleop.py -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/key_teleop
+[1.034s] byte-compiling /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge/__init__.py to __init__.cpython-310.pyc
+[1.034s] byte-compiling /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge/utils.py to utils.cpython-310.pyc
+[1.036s] byte-compiling /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge/noise_simulator.py to noise_simulator.cpython-310.pyc
+[1.036s] byte-compiling /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge/quadrotor_control_interface.py to quadrotor_control_interface.cpython-310.pyc
+[1.037s] byte-compiling /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge/consts.py to consts.cpython-310.pyc
+[1.037s] byte-compiling /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge/tesse_ros_node.py to tesse_ros_node.cpython-310.pyc
+[1.039s] byte-compiling /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/key_teleop/__init__.py to __init__.cpython-310.pyc
+[1.039s] byte-compiling /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/key_teleop/key_teleop.py to key_teleop.cpython-310.pyc
+[1.040s] byte-compiling /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/key_teleop/alternative_key_teleop.py to alternative_key_teleop.cpython-310.pyc
+[1.040s] running install_data
+[1.040s] creating /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/ament_index
+[1.040s] creating /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/ament_index/resource_index
+[1.040s] creating /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/ament_index/resource_index/packages
+[1.040s] copying resource/tesse_ros_bridge -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/ament_index/resource_index/packages
+[1.040s] copying package.xml -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge
+[1.040s] creating /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/launch
+[1.040s] copying launch/tesse_quadrotor_bridge.launch.yaml -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/launch
+[1.052s] creating /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/config
+[1.052s] copying config/lidar_params.yaml -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/config
+[1.063s] copying config/noise_model.yaml -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/config
+[1.063s] copying config/camera_params.yaml -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/config
+[1.063s] copying config/params.yaml -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/config
+[1.064s] copying config/object_spawn_params.yaml -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/config
+[1.064s] copying config/map_tfs.yaml -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/config
+[1.064s] copying config/tesse_agent_params.yaml -> /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/config
+[1.064s] running install_egg_info
+[1.066s] Copying ../build/tesse_ros_bridge/tesse_ros_bridge.egg-info to /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages/tesse_ros_bridge-0.0.0-py3.10.egg-info
+[1.066s] running install_scripts
+[1.077s] Installing key_teleop script to /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/tesse_ros_bridge
+[1.077s] Installing quadrotor_control_interface script to /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/tesse_ros_bridge
+[1.077s] Installing tesse_ros_node script to /home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/tesse_ros_bridge
+[1.077s] writing list of installed files to '/home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/install.log'
+[1.090s] Invoked command in '/home/zengine/VNAV-labs/lab3/tesse_ros_bridge' returned '0': PYTHONPATH=/home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/tesse_ros_bridge build --build-base /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build install --record /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/install.log --single-version-externally-managed install_data

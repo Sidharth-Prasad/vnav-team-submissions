@@ -1,0 +1,526 @@
+[0.149s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.149s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7b11cbf6dc00>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7b11cbf6cfa0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7b11cbf6cfa0>>, mixin_verb=('build',))
+[2.512s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.512s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.512s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.512s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.512s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.512s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.512s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/zengine/VNAV-labs/lab3'
+[2.512s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.512s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.512s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.512s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.512s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.512s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.512s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.512s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.512s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.520s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.520s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.520s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.520s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.520s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.520s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.520s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.520s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.532s] Level 1:colcon.colcon_core.package_identification:_identify(controller_pkg) by extensions ['ignore', 'ignore_ament_install']
+[2.532s] Level 1:colcon.colcon_core.package_identification:_identify(controller_pkg) by extension 'ignore'
+[2.532s] Level 1:colcon.colcon_core.package_identification:_identify(controller_pkg) by extension 'ignore_ament_install'
+[2.532s] Level 1:colcon.colcon_core.package_identification:_identify(controller_pkg) by extensions ['colcon_pkg']
+[2.532s] Level 1:colcon.colcon_core.package_identification:_identify(controller_pkg) by extension 'colcon_pkg'
+[2.532s] Level 1:colcon.colcon_core.package_identification:_identify(controller_pkg) by extensions ['colcon_meta']
+[2.532s] Level 1:colcon.colcon_core.package_identification:_identify(controller_pkg) by extension 'colcon_meta'
+[2.532s] Level 1:colcon.colcon_core.package_identification:_identify(controller_pkg) by extensions ['ros']
+[2.532s] Level 1:colcon.colcon_core.package_identification:_identify(controller_pkg) by extension 'ros'
+[2.548s] DEBUG:colcon.colcon_core.package_identification:Package 'controller_pkg' with type 'ros.ament_cmake' and name 'controller_pkg'
+[2.548s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.548s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.548s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data) by extensions ['ignore', 'ignore_ament_install']
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data) by extension 'ignore'
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data) by extension 'ignore_ament_install'
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data) by extensions ['colcon_pkg']
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data) by extension 'colcon_pkg'
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data) by extensions ['colcon_meta']
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data) by extension 'colcon_meta'
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data) by extensions ['ros']
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data) by extension 'ros'
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data) by extensions ['cmake', 'python']
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data) by extension 'cmake'
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data) by extension 'python'
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data) by extensions ['python_setup_py']
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data) by extension 'python_setup_py'
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Managed) by extensions ['ignore', 'ignore_ament_install']
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Managed) by extension 'ignore'
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Managed) by extension 'ignore_ament_install'
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Managed) by extensions ['colcon_pkg']
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Managed) by extension 'colcon_pkg'
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Managed) by extensions ['colcon_meta']
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Managed) by extension 'colcon_meta'
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Managed) by extensions ['ros']
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Managed) by extension 'ros'
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Managed) by extensions ['cmake', 'python']
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Managed) by extension 'cmake'
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Managed) by extension 'python'
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Managed) by extensions ['python_setup_py']
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Managed) by extension 'python_setup_py'
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge) by extensions ['ignore', 'ignore_ament_install']
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge) by extension 'ignore'
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge) by extension 'ignore_ament_install'
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge) by extensions ['colcon_pkg']
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge) by extension 'colcon_pkg'
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge) by extensions ['colcon_meta']
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge) by extension 'colcon_meta'
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge) by extensions ['ros']
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge) by extension 'ros'
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge) by extensions ['cmake', 'python']
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge) by extension 'cmake'
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge) by extension 'python'
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge) by extensions ['python_setup_py']
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge) by extension 'python_setup_py'
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc) by extensions ['ignore', 'ignore_ament_install']
+[2.550s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc) by extension 'ignore'
+[2.550s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc) by extension 'ignore_ament_install'
+[2.550s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc) by extensions ['colcon_pkg']
+[2.550s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc) by extension 'colcon_pkg'
+[2.550s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc) by extensions ['colcon_meta']
+[2.550s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc) by extension 'colcon_meta'
+[2.550s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc) by extensions ['ros']
+[2.550s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc) by extension 'ros'
+[2.550s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc) by extensions ['cmake', 'python']
+[2.550s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc) by extension 'cmake'
+[2.550s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc) by extension 'python'
+[2.550s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc) by extensions ['python_setup_py']
+[2.550s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc) by extension 'python_setup_py'
+[2.550s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono) by extensions ['ignore', 'ignore_ament_install']
+[2.550s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono) by extension 'ignore'
+[2.550s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono) by extension 'ignore_ament_install'
+[2.550s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono) by extensions ['colcon_pkg']
+[2.550s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono) by extension 'colcon_pkg'
+[2.550s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono) by extensions ['colcon_meta']
+[2.550s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono) by extension 'colcon_meta'
+[2.550s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono) by extensions ['ros']
+[2.550s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono) by extension 'ros'
+[2.550s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono) by extensions ['cmake', 'python']
+[2.550s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono) by extension 'cmake'
+[2.550s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono) by extension 'python'
+[2.550s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono) by extensions ['python_setup_py']
+[2.550s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono) by extension 'python_setup_py'
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0) by extensions ['ignore', 'ignore_ament_install']
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0) by extension 'ignore'
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0) by extension 'ignore_ament_install'
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0) by extensions ['colcon_pkg']
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0) by extension 'colcon_pkg'
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0) by extensions ['colcon_meta']
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0) by extension 'colcon_meta'
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0) by extensions ['ros']
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0) by extension 'ros'
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0) by extensions ['cmake', 'python']
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0) by extension 'cmake'
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0) by extension 'python'
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0) by extensions ['python_setup_py']
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0) by extension 'python_setup_py'
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extensions ['ignore', 'ignore_ament_install']
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extension 'ignore'
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extension 'ignore_ament_install'
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extensions ['colcon_pkg']
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extension 'colcon_pkg'
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extensions ['colcon_meta']
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extension 'colcon_meta'
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extensions ['ros']
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extension 'ros'
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extensions ['cmake', 'python']
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extension 'cmake'
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extension 'python'
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extensions ['python_setup_py']
+[2.553s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extension 'python_setup_py'
+[2.554s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0) by extensions ['ignore', 'ignore_ament_install']
+[2.554s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0) by extension 'ignore'
+[2.554s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0) by extension 'ignore_ament_install'
+[2.554s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0) by extensions ['colcon_pkg']
+[2.554s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0) by extension 'colcon_pkg'
+[2.554s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0) by extensions ['colcon_meta']
+[2.554s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0) by extension 'colcon_meta'
+[2.554s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0) by extensions ['ros']
+[2.554s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0) by extension 'ros'
+[2.554s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0) by extensions ['cmake', 'python']
+[2.554s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0) by extension 'cmake'
+[2.554s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0) by extension 'python'
+[2.554s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0) by extensions ['python_setup_py']
+[2.554s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0) by extension 'python_setup_py'
+[2.554s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extensions ['ignore', 'ignore_ament_install']
+[2.554s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extension 'ignore'
+[2.554s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extension 'ignore_ament_install'
+[2.554s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extensions ['colcon_pkg']
+[2.554s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extension 'colcon_pkg'
+[2.554s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extensions ['colcon_meta']
+[2.554s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extension 'colcon_meta'
+[2.554s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extensions ['ros']
+[2.554s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extension 'ros'
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extensions ['cmake', 'python']
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extension 'cmake'
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extension 'python'
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extensions ['python_setup_py']
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extension 'python_setup_py'
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5) by extensions ['ignore', 'ignore_ament_install']
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5) by extension 'ignore'
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5) by extension 'ignore_ament_install'
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5) by extensions ['colcon_pkg']
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5) by extension 'colcon_pkg'
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5) by extensions ['colcon_meta']
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5) by extension 'colcon_meta'
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5) by extensions ['ros']
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5) by extension 'ros'
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5) by extensions ['cmake', 'python']
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5) by extension 'cmake'
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5) by extension 'python'
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5) by extensions ['python_setup_py']
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5) by extension 'python_setup_py'
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extensions ['ignore', 'ignore_ament_install']
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extension 'ignore'
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extension 'ignore_ament_install'
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extensions ['colcon_pkg']
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extension 'colcon_pkg'
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extensions ['colcon_meta']
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extension 'colcon_meta'
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extensions ['ros']
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extension 'ros'
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extensions ['cmake', 'python']
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extension 'cmake'
+[2.555s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extension 'python'
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extensions ['python_setup_py']
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extension 'python_setup_py'
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/mconfig) by extensions ['ignore', 'ignore_ament_install']
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/mconfig) by extension 'ignore'
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/mconfig) by extension 'ignore_ament_install'
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/mconfig) by extensions ['colcon_pkg']
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/mconfig) by extension 'colcon_pkg'
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/mconfig) by extensions ['colcon_meta']
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/mconfig) by extension 'colcon_meta'
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/mconfig) by extensions ['ros']
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/mconfig) by extension 'ros'
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/mconfig) by extensions ['cmake', 'python']
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/mconfig) by extension 'cmake'
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/mconfig) by extension 'python'
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/mconfig) by extensions ['python_setup_py']
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/mconfig) by extension 'python_setup_py'
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/registry) by extensions ['ignore', 'ignore_ament_install']
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/registry) by extension 'ignore'
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/registry) by extension 'ignore_ament_install'
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/registry) by extensions ['colcon_pkg']
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/registry) by extension 'colcon_pkg'
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/registry) by extensions ['colcon_meta']
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/registry) by extension 'colcon_meta'
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/registry) by extensions ['ros']
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/registry) by extension 'ros'
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/registry) by extensions ['cmake', 'python']
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/registry) by extension 'cmake'
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/registry) by extension 'python'
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/registry) by extensions ['python_setup_py']
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/etc/mono/registry) by extension 'python_setup_py'
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/x86_64) by extensions ['ignore', 'ignore_ament_install']
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/x86_64) by extension 'ignore'
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/x86_64) by extension 'ignore_ament_install'
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/x86_64) by extensions ['colcon_pkg']
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/x86_64) by extension 'colcon_pkg'
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/x86_64) by extensions ['colcon_meta']
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/x86_64) by extension 'colcon_meta'
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/x86_64) by extensions ['ros']
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/x86_64) by extension 'ros'
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/x86_64) by extensions ['cmake', 'python']
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/x86_64) by extension 'cmake'
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/x86_64) by extension 'python'
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/x86_64) by extensions ['python_setup_py']
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/MonoBleedingEdge/x86_64) by extension 'python_setup_py'
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Resources) by extensions ['ignore', 'ignore_ament_install']
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Resources) by extension 'ignore'
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Resources) by extension 'ignore_ament_install'
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Resources) by extensions ['colcon_pkg']
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Resources) by extension 'colcon_pkg'
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Resources) by extensions ['colcon_meta']
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Resources) by extension 'colcon_meta'
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Resources) by extensions ['ros']
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Resources) by extension 'ros'
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Resources) by extensions ['cmake', 'python']
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Resources) by extension 'cmake'
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Resources) by extension 'python'
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Resources) by extensions ['python_setup_py']
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/Resources) by extension 'python_setup_py'
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/StreamingAssets) by extensions ['ignore', 'ignore_ament_install']
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/StreamingAssets) by extension 'ignore'
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/StreamingAssets) by extension 'ignore_ament_install'
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/StreamingAssets) by extensions ['colcon_pkg']
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/StreamingAssets) by extension 'colcon_pkg'
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/StreamingAssets) by extensions ['colcon_meta']
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/StreamingAssets) by extension 'colcon_meta'
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/StreamingAssets) by extensions ['ros']
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/StreamingAssets) by extension 'ros'
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/StreamingAssets) by extensions ['cmake', 'python']
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/StreamingAssets) by extension 'cmake'
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/StreamingAssets) by extension 'python'
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/StreamingAssets) by extensions ['python_setup_py']
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(lab3_Data/StreamingAssets) by extension 'python_setup_py'
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.558s] Level 1:colcon.colcon_core.package_identification:_identify(tesse-interface) by extensions ['ignore', 'ignore_ament_install']
+[2.558s] Level 1:colcon.colcon_core.package_identification:_identify(tesse-interface) by extension 'ignore'
+[2.558s] Level 1:colcon.colcon_core.package_identification:_identify(tesse-interface) by extension 'ignore_ament_install'
+[2.558s] Level 1:colcon.colcon_core.package_identification:_identify(tesse-interface) by extensions ['colcon_pkg']
+[2.558s] Level 1:colcon.colcon_core.package_identification:_identify(tesse-interface) by extension 'colcon_pkg'
+[2.558s] Level 1:colcon.colcon_core.package_identification:_identify(tesse-interface) by extensions ['colcon_meta']
+[2.558s] Level 1:colcon.colcon_core.package_identification:_identify(tesse-interface) by extension 'colcon_meta'
+[2.558s] Level 1:colcon.colcon_core.package_identification:_identify(tesse-interface) by extensions ['ros']
+[2.558s] Level 1:colcon.colcon_core.package_identification:_identify(tesse-interface) by extension 'ros'
+[2.558s] Level 1:colcon.colcon_core.package_identification:_identify(tesse-interface) by extensions ['cmake', 'python']
+[2.558s] Level 1:colcon.colcon_core.package_identification:_identify(tesse-interface) by extension 'cmake'
+[2.558s] Level 1:colcon.colcon_core.package_identification:_identify(tesse-interface) by extension 'python'
+[2.558s] DEBUG:colcon.colcon_core.package_identification:Python package in 'tesse-interface' passes arguments to the setup() function which requires a different identification extension than 'python'
+[2.558s] Level 1:colcon.colcon_core.package_identification:_identify(tesse-interface) by extensions ['python_setup_py']
+[2.558s] Level 1:colcon.colcon_core.package_identification:_identify(tesse-interface) by extension 'python_setup_py'
+[2.701s] DEBUG:colcon.colcon_core.package_identification:Package 'tesse-interface' with type 'python' and name 'tesse'
+[2.701s] Level 1:colcon.colcon_core.package_identification:_identify(tesse_msgs) by extensions ['ignore', 'ignore_ament_install']
+[2.701s] Level 1:colcon.colcon_core.package_identification:_identify(tesse_msgs) by extension 'ignore'
+[2.701s] Level 1:colcon.colcon_core.package_identification:_identify(tesse_msgs) by extension 'ignore_ament_install'
+[2.701s] Level 1:colcon.colcon_core.package_identification:_identify(tesse_msgs) by extensions ['colcon_pkg']
+[2.701s] Level 1:colcon.colcon_core.package_identification:_identify(tesse_msgs) by extension 'colcon_pkg'
+[2.701s] Level 1:colcon.colcon_core.package_identification:_identify(tesse_msgs) by extensions ['colcon_meta']
+[2.701s] Level 1:colcon.colcon_core.package_identification:_identify(tesse_msgs) by extension 'colcon_meta'
+[2.701s] Level 1:colcon.colcon_core.package_identification:_identify(tesse_msgs) by extensions ['ros']
+[2.701s] Level 1:colcon.colcon_core.package_identification:_identify(tesse_msgs) by extension 'ros'
+[2.708s] DEBUG:colcon.colcon_core.package_identification:Package 'tesse_msgs' with type 'ros.ament_cmake' and name 'tesse_msgs'
+[2.708s] Level 1:colcon.colcon_core.package_identification:_identify(tesse_ros_bridge) by extensions ['ignore', 'ignore_ament_install']
+[2.708s] Level 1:colcon.colcon_core.package_identification:_identify(tesse_ros_bridge) by extension 'ignore'
+[2.708s] Level 1:colcon.colcon_core.package_identification:_identify(tesse_ros_bridge) by extension 'ignore_ament_install'
+[2.708s] Level 1:colcon.colcon_core.package_identification:_identify(tesse_ros_bridge) by extensions ['colcon_pkg']
+[2.708s] Level 1:colcon.colcon_core.package_identification:_identify(tesse_ros_bridge) by extension 'colcon_pkg'
+[2.708s] Level 1:colcon.colcon_core.package_identification:_identify(tesse_ros_bridge) by extensions ['colcon_meta']
+[2.708s] Level 1:colcon.colcon_core.package_identification:_identify(tesse_ros_bridge) by extension 'colcon_meta'
+[2.708s] Level 1:colcon.colcon_core.package_identification:_identify(tesse_ros_bridge) by extensions ['ros']
+[2.708s] Level 1:colcon.colcon_core.package_identification:_identify(tesse_ros_bridge) by extension 'ros'
+[2.709s] DEBUG:colcon.colcon_core.package_identification:Package 'tesse_ros_bridge' with type 'ros.ament_python' and name 'tesse_ros_bridge'
+[2.709s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.709s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.709s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.709s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.709s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.867s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.867s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.887s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 10 installed packages in /home/zengine/vnav_ws/src/install
+[2.888s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 274 installed packages in /opt/ros/humble
+[2.889s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[3.011s] Level 5:colcon.colcon_core.verb:set package 'controller_pkg' build argument 'cmake_args' from command line to 'None'
+[3.011s] Level 5:colcon.colcon_core.verb:set package 'controller_pkg' build argument 'cmake_target' from command line to 'None'
+[3.011s] Level 5:colcon.colcon_core.verb:set package 'controller_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.011s] Level 5:colcon.colcon_core.verb:set package 'controller_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[3.011s] Level 5:colcon.colcon_core.verb:set package 'controller_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[3.011s] Level 5:colcon.colcon_core.verb:set package 'controller_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[3.011s] Level 5:colcon.colcon_core.verb:set package 'controller_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[3.011s] Level 5:colcon.colcon_core.verb:set package 'controller_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[3.011s] Level 5:colcon.colcon_core.verb:set package 'controller_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.011s] DEBUG:colcon.colcon_core.verb:Building package 'controller_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zengine/VNAV-labs/lab3/build/controller_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zengine/VNAV-labs/lab3/install/controller_pkg', 'merge_install': False, 'path': '/home/zengine/VNAV-labs/lab3/controller_pkg', 'symlink_install': False, 'test_result_base': None}
+[3.011s] Level 5:colcon.colcon_core.verb:set package 'tesse' build argument 'cmake_args' from command line to 'None'
+[3.011s] Level 5:colcon.colcon_core.verb:set package 'tesse' build argument 'cmake_target' from command line to 'None'
+[3.011s] Level 5:colcon.colcon_core.verb:set package 'tesse' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.011s] Level 5:colcon.colcon_core.verb:set package 'tesse' build argument 'cmake_clean_cache' from command line to 'False'
+[3.011s] Level 5:colcon.colcon_core.verb:set package 'tesse' build argument 'cmake_clean_first' from command line to 'False'
+[3.011s] Level 5:colcon.colcon_core.verb:set package 'tesse' build argument 'cmake_force_configure' from command line to 'False'
+[3.011s] Level 5:colcon.colcon_core.verb:set package 'tesse' build argument 'ament_cmake_args' from command line to 'None'
+[3.011s] Level 5:colcon.colcon_core.verb:set package 'tesse' build argument 'catkin_cmake_args' from command line to 'None'
+[3.011s] Level 5:colcon.colcon_core.verb:set package 'tesse' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.011s] DEBUG:colcon.colcon_core.verb:Building package 'tesse' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zengine/VNAV-labs/lab3/build/tesse', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zengine/VNAV-labs/lab3/install/tesse', 'merge_install': False, 'path': '/home/zengine/VNAV-labs/lab3/tesse-interface', 'symlink_install': False, 'test_result_base': None}
+[3.012s] Level 5:colcon.colcon_core.verb:set package 'tesse_msgs' build argument 'cmake_args' from command line to 'None'
+[3.012s] Level 5:colcon.colcon_core.verb:set package 'tesse_msgs' build argument 'cmake_target' from command line to 'None'
+[3.012s] Level 5:colcon.colcon_core.verb:set package 'tesse_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.012s] Level 5:colcon.colcon_core.verb:set package 'tesse_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[3.012s] Level 5:colcon.colcon_core.verb:set package 'tesse_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[3.012s] Level 5:colcon.colcon_core.verb:set package 'tesse_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[3.012s] Level 5:colcon.colcon_core.verb:set package 'tesse_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[3.012s] Level 5:colcon.colcon_core.verb:set package 'tesse_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[3.012s] Level 5:colcon.colcon_core.verb:set package 'tesse_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.012s] DEBUG:colcon.colcon_core.verb:Building package 'tesse_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zengine/VNAV-labs/lab3/build/tesse_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zengine/VNAV-labs/lab3/install/tesse_msgs', 'merge_install': False, 'path': '/home/zengine/VNAV-labs/lab3/tesse_msgs', 'symlink_install': False, 'test_result_base': None}
+[3.012s] Level 5:colcon.colcon_core.verb:set package 'tesse_ros_bridge' build argument 'cmake_args' from command line to 'None'
+[3.012s] Level 5:colcon.colcon_core.verb:set package 'tesse_ros_bridge' build argument 'cmake_target' from command line to 'None'
+[3.012s] Level 5:colcon.colcon_core.verb:set package 'tesse_ros_bridge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.012s] Level 5:colcon.colcon_core.verb:set package 'tesse_ros_bridge' build argument 'cmake_clean_cache' from command line to 'False'
+[3.012s] Level 5:colcon.colcon_core.verb:set package 'tesse_ros_bridge' build argument 'cmake_clean_first' from command line to 'False'
+[3.012s] Level 5:colcon.colcon_core.verb:set package 'tesse_ros_bridge' build argument 'cmake_force_configure' from command line to 'False'
+[3.012s] Level 5:colcon.colcon_core.verb:set package 'tesse_ros_bridge' build argument 'ament_cmake_args' from command line to 'None'
+[3.012s] Level 5:colcon.colcon_core.verb:set package 'tesse_ros_bridge' build argument 'catkin_cmake_args' from command line to 'None'
+[3.012s] Level 5:colcon.colcon_core.verb:set package 'tesse_ros_bridge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.012s] DEBUG:colcon.colcon_core.verb:Building package 'tesse_ros_bridge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge', 'merge_install': False, 'path': '/home/zengine/VNAV-labs/lab3/tesse_ros_bridge', 'symlink_install': False, 'test_result_base': None}
+[3.012s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[3.013s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[3.013s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zengine/VNAV-labs/lab3/controller_pkg' with build type 'ament_cmake'
+[3.013s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zengine/VNAV-labs/lab3/controller_pkg'
+[3.023s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.024s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.024s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.026s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/zengine/VNAV-labs/lab3/tesse-interface'
+[3.026s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.026s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.028s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zengine/VNAV-labs/lab3/tesse_msgs' with build type 'ament_cmake'
+[3.028s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zengine/VNAV-labs/lab3/tesse_msgs'
+[3.028s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.028s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.030s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/zengine/VNAV-labs/lab3/tesse_ros_bridge' with build type 'ament_python'
+[3.030s] Level 1:colcon.colcon_core.shell:create_environment_hook('tesse_ros_bridge', 'ament_prefix_path')
+[3.030s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/hook/ament_prefix_path.ps1'
+[3.031s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/hook/ament_prefix_path.dsv'
+[3.031s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/hook/ament_prefix_path.sh'
+[3.032s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.032s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.035s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zengine/VNAV-labs/lab3/build/controller_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zengine/vnav_ws/src/install/tesse_ros_bridge:/opt/ros/humble /usr/bin/cmake /home/zengine/VNAV-labs/lab3/controller_pkg -DCMAKE_INSTALL_PREFIX=/home/zengine/VNAV-labs/lab3/install/controller_pkg
+[3.174s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zengine/VNAV-labs/lab3/build/tesse_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zengine/vnav_ws/src/install/tesse_ros_bridge:/opt/ros/humble /usr/bin/cmake /home/zengine/VNAV-labs/lab3/tesse_msgs -DCMAKE_INSTALL_PREFIX=/home/zengine/VNAV-labs/lab3/install/tesse_msgs
+[3.317s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/zengine/VNAV-labs/lab3/tesse_ros_bridge'
+[3.317s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.317s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.926s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zengine/VNAV-labs/lab3/tesse_ros_bridge': PYTHONPATH=/home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/tesse_ros_bridge build --build-base /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build install --record /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/install.log --single-version-externally-managed install_data
+[3.927s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zengine/VNAV-labs/lab3/tesse-interface': PYTHONPATH=/home/zengine/VNAV-labs/lab3/build/tesse/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zengine/VNAV-labs/lab3/install/tesse/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/tesse build --build-base /home/zengine/VNAV-labs/lab3/build/tesse/build install --record /home/zengine/VNAV-labs/lab3/build/tesse/install.log --single-version-externally-managed
+[4.120s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zengine/VNAV-labs/lab3/tesse_ros_bridge' returned '0': PYTHONPATH=/home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/tesse_ros_bridge build --build-base /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/build install --record /home/zengine/VNAV-labs/lab3/build/tesse_ros_bridge/install.log --single-version-externally-managed install_data
+[4.293s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge' for CMake module files
+[4.293s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge' for CMake config files
+[4.294s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib'
+[4.294s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/bin'
+[4.294s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/pkgconfig/tesse_ros_bridge.pc'
+[4.294s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/lib/python3.10/site-packages'
+[4.294s] Level 1:colcon.colcon_core.shell:create_environment_hook('tesse_ros_bridge', 'pythonpath')
+[4.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/hook/pythonpath.ps1'
+[4.294s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/hook/pythonpath.dsv'
+[4.295s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/hook/pythonpath.sh'
+[4.295s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/bin'
+[4.295s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tesse_ros_bridge)
+[4.295s] INFO:colcon.colcon_core.shell:Creating package script '/home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/package.ps1'
+[4.320s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/package.dsv'
+[4.330s] INFO:colcon.colcon_core.shell:Creating package script '/home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/package.sh'
+[4.330s] INFO:colcon.colcon_core.shell:Creating package script '/home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/package.bash'
+[4.331s] INFO:colcon.colcon_core.shell:Creating package script '/home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/tesse_ros_bridge/package.zsh'
+[4.352s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zengine/VNAV-labs/lab3/install/tesse_ros_bridge/share/colcon-core/packages/tesse_ros_bridge)
+[4.353s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse' for CMake module files
+[4.353s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zengine/VNAV-labs/lab3/tesse-interface' returned '0': PYTHONPATH=/home/zengine/VNAV-labs/lab3/build/tesse/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zengine/VNAV-labs/lab3/install/tesse/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/tesse build --build-base /home/zengine/VNAV-labs/lab3/build/tesse/build install --record /home/zengine/VNAV-labs/lab3/build/tesse/install.log --single-version-externally-managed
+[4.353s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse' for CMake config files
+[4.353s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse/lib'
+[4.353s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse/bin'
+[4.354s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse/lib/pkgconfig/tesse.pc'
+[4.354s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse/lib/python3.10/site-packages'
+[4.354s] Level 1:colcon.colcon_core.shell:create_environment_hook('tesse', 'pythonpath')
+[4.354s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zengine/VNAV-labs/lab3/install/tesse/share/tesse/hook/pythonpath.ps1'
+[4.354s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zengine/VNAV-labs/lab3/install/tesse/share/tesse/hook/pythonpath.dsv'
+[4.354s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zengine/VNAV-labs/lab3/install/tesse/share/tesse/hook/pythonpath.sh'
+[4.355s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse/bin'
+[4.355s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tesse)
+[4.355s] INFO:colcon.colcon_core.shell:Creating package script '/home/zengine/VNAV-labs/lab3/install/tesse/share/tesse/package.ps1'
+[4.355s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zengine/VNAV-labs/lab3/install/tesse/share/tesse/package.dsv'
+[4.356s] INFO:colcon.colcon_core.shell:Creating package script '/home/zengine/VNAV-labs/lab3/install/tesse/share/tesse/package.sh'
+[4.356s] INFO:colcon.colcon_core.shell:Creating package script '/home/zengine/VNAV-labs/lab3/install/tesse/share/tesse/package.bash'
+[4.356s] INFO:colcon.colcon_core.shell:Creating package script '/home/zengine/VNAV-labs/lab3/install/tesse/share/tesse/package.zsh'
+[4.356s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zengine/VNAV-labs/lab3/install/tesse/share/colcon-core/packages/tesse)
+[7.347s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zengine/VNAV-labs/lab3/build/tesse_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zengine/vnav_ws/src/install/tesse_ros_bridge:/opt/ros/humble /usr/bin/cmake /home/zengine/VNAV-labs/lab3/tesse_msgs -DCMAKE_INSTALL_PREFIX=/home/zengine/VNAV-labs/lab3/install/tesse_msgs
+[7.348s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zengine/VNAV-labs/lab3/build/tesse_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zengine/vnav_ws/src/install/tesse_ros_bridge:/opt/ros/humble /usr/bin/cmake --build /home/zengine/VNAV-labs/lab3/build/tesse_msgs -- -j20 -l20
+[7.787s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zengine/VNAV-labs/lab3/build/controller_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zengine/vnav_ws/src/install/tesse_ros_bridge:/opt/ros/humble /usr/bin/cmake /home/zengine/VNAV-labs/lab3/controller_pkg -DCMAKE_INSTALL_PREFIX=/home/zengine/VNAV-labs/lab3/install/controller_pkg
+[7.788s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zengine/VNAV-labs/lab3/build/controller_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zengine/vnav_ws/src/install/tesse_ros_bridge:/opt/ros/humble /usr/bin/cmake --build /home/zengine/VNAV-labs/lab3/build/controller_pkg -- -j20 -l20
+[10.158s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zengine/VNAV-labs/lab3/build/tesse_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zengine/vnav_ws/src/install/tesse_ros_bridge:/opt/ros/humble /usr/bin/cmake --build /home/zengine/VNAV-labs/lab3/build/tesse_msgs -- -j20 -l20
+[10.164s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zengine/VNAV-labs/lab3/build/tesse_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zengine/vnav_ws/src/install/tesse_ros_bridge:/opt/ros/humble /usr/bin/cmake --install /home/zengine/VNAV-labs/lab3/build/tesse_msgs
+[10.237s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tesse_msgs)
+[10.237s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse_msgs' for CMake module files
+[10.237s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zengine/VNAV-labs/lab3/build/tesse_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zengine/vnav_ws/src/install/tesse_ros_bridge:/opt/ros/humble /usr/bin/cmake --install /home/zengine/VNAV-labs/lab3/build/tesse_msgs
+[10.238s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse_msgs' for CMake config files
+[10.238s] Level 1:colcon.colcon_core.shell:create_environment_hook('tesse_msgs', 'cmake_prefix_path')
+[10.238s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/share/tesse_msgs/hook/cmake_prefix_path.ps1'
+[10.238s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/share/tesse_msgs/hook/cmake_prefix_path.dsv'
+[10.238s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/share/tesse_msgs/hook/cmake_prefix_path.sh'
+[10.239s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/lib'
+[10.239s] Level 1:colcon.colcon_core.shell:create_environment_hook('tesse_msgs', 'ld_library_path_lib')
+[10.239s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/share/tesse_msgs/hook/ld_library_path_lib.ps1'
+[10.239s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/share/tesse_msgs/hook/ld_library_path_lib.dsv'
+[10.239s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/share/tesse_msgs/hook/ld_library_path_lib.sh'
+[10.239s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/bin'
+[10.239s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/lib/pkgconfig/tesse_msgs.pc'
+[10.239s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/lib/python3.10/site-packages'
+[10.240s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/bin'
+[10.240s] INFO:colcon.colcon_core.shell:Creating package script '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/share/tesse_msgs/package.ps1'
+[10.240s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/share/tesse_msgs/package.dsv'
+[10.240s] INFO:colcon.colcon_core.shell:Creating package script '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/share/tesse_msgs/package.sh'
+[10.240s] INFO:colcon.colcon_core.shell:Creating package script '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/share/tesse_msgs/package.bash'
+[10.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/share/tesse_msgs/package.zsh'
+[10.241s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zengine/VNAV-labs/lab3/install/tesse_msgs/share/colcon-core/packages/tesse_msgs)
+[10.241s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tesse_msgs)
+[10.241s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse_msgs' for CMake module files
+[10.241s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse_msgs' for CMake config files
+[10.242s] Level 1:colcon.colcon_core.shell:create_environment_hook('tesse_msgs', 'cmake_prefix_path')
+[10.242s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/share/tesse_msgs/hook/cmake_prefix_path.ps1'
+[10.242s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/share/tesse_msgs/hook/cmake_prefix_path.dsv'
+[10.242s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/share/tesse_msgs/hook/cmake_prefix_path.sh'
+[10.242s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/lib'
+[10.242s] Level 1:colcon.colcon_core.shell:create_environment_hook('tesse_msgs', 'ld_library_path_lib')
+[10.242s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/share/tesse_msgs/hook/ld_library_path_lib.ps1'
+[10.243s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/share/tesse_msgs/hook/ld_library_path_lib.dsv'
+[10.243s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/share/tesse_msgs/hook/ld_library_path_lib.sh'
+[10.243s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/bin'
+[10.243s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/lib/pkgconfig/tesse_msgs.pc'
+[10.243s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/lib/python3.10/site-packages'
+[10.243s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/bin'
+[10.243s] INFO:colcon.colcon_core.shell:Creating package script '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/share/tesse_msgs/package.ps1'
+[10.244s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/share/tesse_msgs/package.dsv'
+[10.244s] INFO:colcon.colcon_core.shell:Creating package script '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/share/tesse_msgs/package.sh'
+[10.244s] INFO:colcon.colcon_core.shell:Creating package script '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/share/tesse_msgs/package.bash'
+[10.244s] INFO:colcon.colcon_core.shell:Creating package script '/home/zengine/VNAV-labs/lab3/install/tesse_msgs/share/tesse_msgs/package.zsh'
+[10.244s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zengine/VNAV-labs/lab3/install/tesse_msgs/share/colcon-core/packages/tesse_msgs)
+[12.833s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zengine/VNAV-labs/lab3/build/controller_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zengine/vnav_ws/src/install/tesse_ros_bridge:/opt/ros/humble /usr/bin/cmake --build /home/zengine/VNAV-labs/lab3/build/controller_pkg -- -j20 -l20
+[12.833s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zengine/VNAV-labs/lab3/build/controller_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zengine/vnav_ws/src/install/tesse_ros_bridge:/opt/ros/humble /usr/bin/cmake --install /home/zengine/VNAV-labs/lab3/build/controller_pkg
+[12.857s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controller_pkg)
+[12.857s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/controller_pkg' for CMake module files
+[12.857s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zengine/VNAV-labs/lab3/build/controller_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zengine/vnav_ws/src/install/tesse_ros_bridge:/opt/ros/humble /usr/bin/cmake --install /home/zengine/VNAV-labs/lab3/build/controller_pkg
+[12.857s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/controller_pkg' for CMake config files
+[12.857s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller_pkg', 'cmake_prefix_path')
+[12.858s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/hook/cmake_prefix_path.ps1'
+[12.858s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/hook/cmake_prefix_path.dsv'
+[12.858s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/hook/cmake_prefix_path.sh'
+[12.858s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/controller_pkg/lib'
+[12.858s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/controller_pkg/bin'
+[12.858s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/controller_pkg/lib/pkgconfig/controller_pkg.pc'
+[12.858s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/controller_pkg/lib/python3.10/site-packages'
+[12.859s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/controller_pkg/bin'
+[12.859s] INFO:colcon.colcon_core.shell:Creating package script '/home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/package.ps1'
+[12.859s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/package.dsv'
+[12.859s] INFO:colcon.colcon_core.shell:Creating package script '/home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/package.sh'
+[12.859s] INFO:colcon.colcon_core.shell:Creating package script '/home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/package.bash'
+[12.860s] INFO:colcon.colcon_core.shell:Creating package script '/home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/package.zsh'
+[12.860s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zengine/VNAV-labs/lab3/install/controller_pkg/share/colcon-core/packages/controller_pkg)
+[12.860s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controller_pkg)
+[12.860s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/controller_pkg' for CMake module files
+[12.860s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/controller_pkg' for CMake config files
+[12.860s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller_pkg', 'cmake_prefix_path')
+[12.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/hook/cmake_prefix_path.ps1'
+[12.861s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/hook/cmake_prefix_path.dsv'
+[12.861s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/hook/cmake_prefix_path.sh'
+[12.861s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/controller_pkg/lib'
+[12.861s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/controller_pkg/bin'
+[12.861s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/controller_pkg/lib/pkgconfig/controller_pkg.pc'
+[12.861s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/controller_pkg/lib/python3.10/site-packages'
+[12.861s] Level 1:colcon.colcon_core.environment:checking '/home/zengine/VNAV-labs/lab3/install/controller_pkg/bin'
+[12.862s] INFO:colcon.colcon_core.shell:Creating package script '/home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/package.ps1'
+[12.862s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/package.dsv'
+[12.862s] INFO:colcon.colcon_core.shell:Creating package script '/home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/package.sh'
+[12.862s] INFO:colcon.colcon_core.shell:Creating package script '/home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/package.bash'
+[12.863s] INFO:colcon.colcon_core.shell:Creating package script '/home/zengine/VNAV-labs/lab3/install/controller_pkg/share/controller_pkg/package.zsh'
+[12.863s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zengine/VNAV-labs/lab3/install/controller_pkg/share/colcon-core/packages/controller_pkg)
+[12.863s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[12.863s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[12.863s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[12.863s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[12.877s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[12.877s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[12.877s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[12.884s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.884s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zengine/VNAV-labs/lab3/install/local_setup.ps1'
+[12.895s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/zengine/VNAV-labs/lab3/install/_local_setup_util_ps1.py'
+[12.913s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zengine/VNAV-labs/lab3/install/setup.ps1'
+[12.923s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zengine/VNAV-labs/lab3/install/local_setup.sh'
+[12.924s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/zengine/VNAV-labs/lab3/install/_local_setup_util_sh.py'
+[12.924s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zengine/VNAV-labs/lab3/install/setup.sh'
+[12.925s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zengine/VNAV-labs/lab3/install/local_setup.bash'
+[12.936s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zengine/VNAV-labs/lab3/install/setup.bash'
+[12.936s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zengine/VNAV-labs/lab3/install/local_setup.zsh'
+[12.951s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zengine/VNAV-labs/lab3/install/setup.zsh'
