@@ -55,8 +55,45 @@ private:
     //   3. Publish the desired MultiDOFJointTrajectoryPoint
     //   4. Create and publish TF transform of the desired pose
     // ~~~~ begin solution
-
     geometry_msgs::msg::Transform transform;
+
+    const auto pos = traj_msg->poses[0].position;
+    const auto q = traj_msg->poses[0].orientation;
+    trajectory_msgs::msg::MultiDOFJointTrajectoryPoint msg;
+    
+    geometry_msgs::msg::Twist velocity;
+    
+    velocity.linear.x = velocity.linear.y = velocity.linear.z = 0;
+    velocity.angular.x = velocity.angular.y = velocity.angular.z = 0;
+    
+    msg.velocities.push_back(velocity);
+
+    geometry_msgs::msg::Twist acceleration;
+    
+    acceleration.linear.x = acceleration.linear.y = acceleration.linear.z = 0;
+    acceleration.angular.x = acceleration.angular.y = acceleration.angular.z = 0;
+
+    msg.accelerations.push_back(acceleration);    
+    
+
+    geometry_msgs::msg::TransformStamped desired_pose;
+    transform.translation.x = pos.x;
+    transform.translation.y = pos.y;
+    transform.translation.z = pos.z;
+
+    transform.rotation.x = q.x;
+    transform.rotation.y = q.y;
+    transform.rotation.z = q.z;
+    transform.rotation.w = q.w;
+
+    desired_pose.transform = transform;
+
+    msg.transforms.push_back(desired_pose.transform);
+    
+    desired_state_pub_->publish(msg);
+    
+    br_->sendTransform(desired_pose);
+    
 
     // ~~~~ end solution
     // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
