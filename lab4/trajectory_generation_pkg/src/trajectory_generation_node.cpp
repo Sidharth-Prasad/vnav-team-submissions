@@ -37,8 +37,10 @@ class WaypointFollower : public rclcpp::Node {
     //  Populate the variable x, which encodes the current world position of the
     //  UAV
     // ~~~~ begin solution
-
-
+    
+    // grab the pose variable from teh currentStateSub
+    const auto position = cur_state.pose.pose.position
+    x << position.x, position.y, position.z
 
     // ~~~~ end solution
     // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
@@ -93,9 +95,12 @@ class WaypointFollower : public rclcpp::Node {
     // for access to SNAP
     using namespace mav_trajectory_generation::derivative_order;
     
-    const int D = 3; // dimension of each vertex in the trajectory
+    const int D = 4; // dimension of each vertex in the trajectory
     mav_trajectory_generation::Vertex::Vector vertices;
     mav_trajectory_generation::Vertex::Vector yaw_vertices;
+
+    const int derivative_to_optimize = mav_trajectory_generation::derivative_order::SNAP;
+    mav_trajectory_generation::Vertex start(dimension), middle(dimension), end(dimension);
 
     // ~~~~ end solution
     // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
@@ -150,12 +155,15 @@ class WaypointFollower : public rclcpp::Node {
     // ~
     //
     //  Finally we get to send commands to our controller! First fill in
-    //  properly the value for 'nex_point.time_from_start' and 'sampling_time'
+    //  properly the value for 'next_point.time_from_start' and 'sampling_time'
     //  (hint: not 0) and after extracting the state information from our
     //  optimized trajectory, finish populating next_point.
     //
     // ~~~~ begin solution
+    
+    //next_point.time_from_start is a field in the MultiDOFJointTrajectoryPoint msg
 
+    //sampling_time is for the sampling trajectories part of the tutorial?
 
 
     // ~~~~ end solution
