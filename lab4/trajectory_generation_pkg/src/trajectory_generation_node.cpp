@@ -102,6 +102,33 @@ class WaypointFollower : public rclcpp::Node {
     const int derivative_to_optimize = mav_trajectory_generation::derivative_order::SNAP;
     mav_trajectory_generation::Vertex start(dimension), middle(dimension), end(dimension);
 
+    // put a for loop here for each potential vertices in there?
+    // other points
+    for(int i = 0; i < sizeof(poseArray);i++){
+      tf2::Quaternion quat_tf;
+      tf2::from_msg(poseArray.poses[i].orientation, quat_tf);
+      double yaw = tf2::getYaw(quat_tf);
+      const auto position = poseArray.poses[i].position;
+      if(i = 0){
+        start.makeStartOrEnd(pose, derivative_to_optimize);
+        start.makeStartOrEnd(yaw, derivative_to_optimize);
+        vertices.push_back(start);
+      }
+      else if(i = sizeof(poseArray) - 1){
+        end.makeStartOrEnd(position, derivative_to_optimize);
+        end.makeStartOrEnd(yaw, derivative_to_optimize);
+        vertices.push_back(end);
+      }
+      else{
+        vertex.addConstraint(mav_trajectory_generation::derivative_order::POSITION, position);
+        vertex.addConstraint(mav_trajectory_generation::derivative_order::ORIENTATION, yaw);
+        vertices.push_back();
+      }
+      
+    }
+    // Last points
+    
+
     // ~~~~ end solution
     // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
     // ~
@@ -160,11 +187,25 @@ class WaypointFollower : public rclcpp::Node {
     //  optimized trajectory, finish populating next_point.
     //
     // ~~~~ begin solution
-    
     //next_point.time_from_start is a field in the MultiDOFJointTrajectoryPoint msg
+    trajectory_msgs::msg::MultiDOFJointTrajectoryPoint next_point;
+    next_point.time_from_start = trajectoryStartTime; //Which timer to use here?
 
     //sampling_time is for the sampling trajectories part of the tutorial?
+    double sampling_time = 2.0;
+    int derivative_order = mav_trajectory_generation::derivative_order::POSITION;
+    Eigen::VectorXd sample = trajectory.evaluate(sampling_time, derivative_order);
+    Eigen::VectorXd sample_yaw = yaw_trajectory.evaluate(sampling_time, derivative_order);
 
+    //trajectories are stored in trajectory and yaw_trajectory variables
+
+    //How to populate the Twist and Transform Msgs?
+    next_point.transforms[0]
+    next_point.velocities[0]
+    next_point.accelerations[0]
+
+    // do we need to publish in this part?
+    desiredStatePub.publish(next_point)
 
     // ~~~~ end solution
     // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
