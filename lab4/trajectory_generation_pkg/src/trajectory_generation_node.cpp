@@ -109,6 +109,16 @@ class WaypointFollower : public rclcpp::Node {
       tf2::from_msg(poseArray.poses[i].orientation, quat_tf);
       double yaw = tf2::getYaw(quat_tf);
       const auto position = poseArray.poses[i].position;
+      //code to accoutn for wrap around
+
+      if(i > 0){
+        double diff = iYaw - prev_yaw;
+        if (diff > M_PI) iYaw -= 2*M_PI;
+        else if (diff < -M_PI) iYaw += 2*M_PI;
+      }
+
+      prev_yaw = iYaw
+
       if(i = 0){
         start.makeStartOrEnd(pose, derivative_to_optimize);
         start.makeStartOrEnd(yaw, derivative_to_optimize);
@@ -192,14 +202,47 @@ class WaypointFollower : public rclcpp::Node {
     next_point.time_from_start = trajectoryStartTime; //Which timer to use here?
 
     //sampling_time is for the sampling trajectories part of the tutorial?
+    using namespace mav_trajectory_generation::derivative::derivative_order;
+    rclcpp::Duration t_traj = now() - trajectoryStartTime;
+    double t = t_traj.seconds()
+
     double sampling_time = 2.0;
-    int derivative_order = mav_trajectory_generation::derivative_order::POSITION;
-    Eigen::VectorXd sample = trajectory.evaluate(sampling_time, derivative_order);
-    Eigen::VectorXd sample_yaw = yaw_trajectory.evaluate(sampling_time, derivative_order);
+    
+    Eigen::VectorXd sample_pos = trajectory.evaluate(t, POSITION);
+    Eigen::VectorXd sample_vel = trajectory.evaluate(t, VELOCITY);
+    Eigen::VectorXd sample_acc = trajectory.evaluate(t, ACCELERATION);
+
+    Eigen::VectorXd sample_yaw = yaw_trajectory.evaluate(sampling_time, POSITION);
+    Eigen::VectorXd sample_yaw_rate = yaw_trajectory.evaluate(sampling_time, VELOCITY);
+
 
     //trajectories are stored in trajectory and yaw_trajectory variables
+    
+    tf2::Quaternion q;
+    q.setRPY(0, 0, sampleYaw(0));
+
 
     //How to populate the Twist and Transform Msgs?
+
+    geometry_msgs::msg::Transform transform;
+    transform.translation.x = sample_pos[0]
+    transform.translation.y = sample_pos[1]
+    transform.translation.z = sample_pos[2]
+    
+    geometry_msgs::msg::Twist velocity;
+    
+    velocity.linear.x = velocity.linear.y = velocity.linear.z = 0;
+    velocity.angular.x = velocity.angular.y = velocity.angular.z = 0;
+    
+    msg.velocities.push_back(velocity);
+
+    geometry_msgs::msg::Twist acceleration;
+    
+    acceleration.linear.x = acceleration.linear.y = acceleration.linear.z = 0;
+    acceleration.angular.x = acceleration.angular.y = acceleration.angular.z = 0;
+
+    msg.accelerations.push_back(acceleration);    
+
     next_point.transforms[0]
     next_point.velocities[0]
     next_point.accelerations[0]
