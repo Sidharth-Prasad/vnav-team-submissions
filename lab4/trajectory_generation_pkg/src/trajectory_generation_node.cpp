@@ -39,8 +39,8 @@ class WaypointFollower : public rclcpp::Node {
     // ~~~~ begin solution
     
     // grab the pose variable from teh currentStateSub
-    const auto position = cur_state.pose.pose.position
-    x << position.x, position.y, position.z
+    const auto &position = cur_state.pose.pose.position;
+    x << position.x, position.y, position.z;
 
     // ~~~~ end solution
     // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
@@ -95,46 +95,48 @@ class WaypointFollower : public rclcpp::Node {
     // for access to SNAP
     using namespace mav_trajectory_generation::derivative_order;
     
-    const int D = 4; // dimension of each vertex in the trajectory
+    const int D = 3; // dimension of each vertex in the trajectory
     mav_trajectory_generation::Vertex::Vector vertices;
     mav_trajectory_generation::Vertex::Vector yaw_vertices;
 
-    const int derivative_to_optimize = mav_trajectory_generation::derivative_order::SNAP;
-    mav_trajectory_generation::Vertex start(dimension), middle(dimension), end(dimension);
+    const int derivative_to_optimize = SNAP;
+    //mav_trajectory_generation::Vertex start(dimension), middle(dimension), end(dimension);
 
+    int nPose = poseArray.poses.size();
     // put a for loop here for each potential vertices in there?
     // other points
-    for(int i = 0; i < sizeof(poseArray);i++){
+    for(int i = 0; i < nPose; i++){
+      mav_trajectory_generation::Vertex pVert(D), yVert(1);
       tf2::Quaternion quat_tf;
-      tf2::from_msg(poseArray.poses[i].orientation, quat_tf);
-      double yaw = tf2::getYaw(quat_tf);
+      const auto iPos= poseArray.poses[i].position;
+      Eigen::Vector3d posVec(iPos.x, iPos.y, iPos.z);
+      tf2::fromMsg(poseArray.poses[i].orientation, quat_tf);
+      double roll, pitch, yaw;
+      tf2::Matrix3x3(quat_tf).getRPY(roll, pitch, yaw);      
       const auto position = poseArray.poses[i].position;
       //code to accoutn for wrap around
-
+      
+      double iYaw = yaw;
+      double prev_yaw;
       if(i > 0){
         double diff = iYaw - prev_yaw;
         if (diff > M_PI) iYaw -= 2*M_PI;
         else if (diff < -M_PI) iYaw += 2*M_PI;
       }
 
-      prev_yaw = iYaw
+      prev_yaw = iYaw;
 
-      if(i = 0){
-        start.makeStartOrEnd(pose, derivative_to_optimize);
-        start.makeStartOrEnd(yaw, derivative_to_optimize);
-        vertices.push_back(start);
-      }
-      else if(i = sizeof(poseArray) - 1){
-        end.makeStartOrEnd(position, derivative_to_optimize);
-        end.makeStartOrEnd(yaw, derivative_to_optimize);
-        vertices.push_back(end);
+      
+      if(i == 0 || i == nPose - 1){
+        pVert.makeStartOrEnd(posVec, derivative_to_optimize);
+        yVert.makeStartOrEnd(iYaw, derivative_to_optimize);
       }
       else{
-        vertex.addConstraint(mav_trajectory_generation::derivative_order::POSITION, position);
-        vertex.addConstraint(mav_trajectory_generation::derivative_order::ORIENTATION, yaw);
-        vertices.push_back();
+        pVert.addConstraint(POSITION, posVec);
+        yVert.addConstraint(POSITION, iYaw);
       }
-      
+        vertices.push_back(pVert);
+        yaw_vertices.push_back(yVert);
     }
     // Last points
     
@@ -198,23 +200,18 @@ class WaypointFollower : public rclcpp::Node {
     //
     // ~~~~ begin solution
     //next_point.time_from_start is a field in the MultiDOFJointTrajectoryPoint msg
-    trajectory_msgs::msg::MultiDOFJointTrajectoryPoint next_point;
-    next_point.time_from_start = trajectoryStartTime; //Which timer to use here?
-
-    //sampling_time is for the sampling trajectories part of the tutorial?
-    using namespace mav_trajectory_generation::derivative::derivative_order;
-    rclcpp::Duration t_traj = now() - trajectoryStartTime;
-    double t = t_traj.seconds()
-
-    double sampling_time = 2.0;
     
-    Eigen::VectorXd sample_pos = trajectory.evaluate(t, POSITION);
-    Eigen::VectorXd sample_vel = trajectory.evaluate(t, VELOCITY);
-    Eigen::VectorXd sample_acc = trajectory.evaluate(t, ACCELERATION);
+    //sampling_time is for the sampling trajectories part of the tutorial?
+    using namespace mav_trajectory_generation::derivative_order;
+    rclcpp::Duration t_traj = now() - trajectoryStartTime;
+    double t = t_traj.seconds();
+    
+    Eigen::VectorXd samplePos = trajectory.evaluate(t, POSITION);
+    Eigen::VectorXd sampleVel = trajectory.evaluate(t, VELOCITY);
+    Eigen::VectorXd sampleAcc = trajectory.evaluate(t, ACCELERATION);
 
-    Eigen::VectorXd sample_yaw = yaw_trajectory.evaluate(sampling_time, POSITION);
-    Eigen::VectorXd sample_yaw_rate = yaw_trajectory.evaluate(sampling_time, VELOCITY);
-
+    Eigen::VectorXd sampleYaw = yaw_trajectory.evaluate(t, POSITION);
+    Eigen::VectorXd sampleYawRate = yaw_trajectory.evaluate(t, VELOCITY);
 
     //trajectories are stored in trajectory and yaw_trajectory variables
     
@@ -222,33 +219,38 @@ class WaypointFollower : public rclcpp::Node {
     q.setRPY(0, 0, sampleYaw(0));
 
 
-    //How to populate the Twist and Transform Msgs?
-
+    trajectory_msgs::msg::MultiDOFJointTrajectoryPoint next_point;
+    next_point.time_from_start = t_traj;
     geometry_msgs::msg::Transform transform;
-    transform.translation.x = sample_pos[0]
-    transform.translation.y = sample_pos[1]
-    transform.translation.z = sample_pos[2]
-    
-    geometry_msgs::msg::Twist velocity;
-    
-    velocity.linear.x = velocity.linear.y = velocity.linear.z = 0;
-    velocity.angular.x = velocity.angular.y = velocity.angular.z = 0;
-    
-    msg.velocities.push_back(velocity);
+    transform.translation.x = samplePos[0];
+    transform.translation.y = samplePos[1];
+    transform.translation.z = samplePos[2];
 
-    geometry_msgs::msg::Twist acceleration;
-    
-    acceleration.linear.x = acceleration.linear.y = acceleration.linear.z = 0;
+    transform.rotation.x = q.x();
+    transform.rotation.y = q.y();
+    transform.rotation.z = q.z();
+    transform.rotation.w = q.w();
+
+    geometry_msgs::msg::Twist velocity, acceleration;
+    velocity.linear.x = sampleVel[0];
+    velocity.linear.y = sampleVel[1];
+    velocity.linear.z = sampleVel[2];
+
+    velocity.angular.x  = velocity.angular.y = 0;
+    velocity.angular.z  = sampleYawRate[0];
+
+    acceleration.linear.x = sampleAcc[0];
+    acceleration.linear.y = sampleAcc[1];
+    acceleration.linear.z = sampleAcc[2];
+
     acceleration.angular.x = acceleration.angular.y = acceleration.angular.z = 0;
 
-    msg.accelerations.push_back(acceleration);    
+    next_point.transforms.push_back(transform);
+    next_point.velocities.push_back(velocity);
+    next_point.accelerations.push_back(acceleration);
 
-    next_point.transforms[0]
-    next_point.velocities[0]
-    next_point.accelerations[0]
-
-    // do we need to publish in this part?
-    desiredStatePub.publish(next_point)
+    
+    desiredStatePub->publish(next_point);
 
     // ~~~~ end solution
     // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
