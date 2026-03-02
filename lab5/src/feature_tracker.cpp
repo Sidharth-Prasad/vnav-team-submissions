@@ -60,7 +60,8 @@ void FeatureTracker::trackFeatures(
   //
   // ~~~~ begin solution
   //
-  //     **** TODO: FILL IN HERE ***
+  detectKeypoints(img_1, &keypoints_1);
+  detectKeypoints(img_2, &keypoints_2);
   //
   // ~~~~ end solution
   //
@@ -71,7 +72,24 @@ void FeatureTracker::trackFeatures(
   //
   // ~~~~ begin solution
   //
-  //     **** TODO: FILL IN HERE ***
+  cv::Mat out_1;
+  cv::Mat out_2;
+  std::string filepath;
+
+  cv::drawKeypoints(img_1, keypoints_1, out_1);
+  cv::drawKeypoints(img_2, keypoints_2, out_2);
+
+  if (save_images) {
+    filepath = "/home/zengine/vnav/vnav-team-submissions/lab5/";
+    cv::imwrite(filepath + "img1.png",out_1);
+    cv::imwrite(filepath + "img2.png",out_2);
+  }
+  if (show_images){
+    cv::imshow("Image 1", out_1);
+    cv::imshow("Image 2",out_2);
+    waitKey(0);
+  }
+
   //
   // ~~~~ end solution
   //

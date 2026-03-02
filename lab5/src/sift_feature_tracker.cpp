@@ -31,7 +31,7 @@ void SiftFeatureTracker::detectKeypoints(const cv::Mat& img,
   //     Hint: look at the header file for this class in the include folder.
   //     There is a private member of the class that you can use directly for
   //     this function, and you should only need one function call.
-  //
+  detector->detect(img, *keypoints);
   // ~~~~ end solution
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 }
@@ -56,6 +56,7 @@ void SiftFeatureTracker::describeKeypoints(const cv::Mat& img,
   //     There is a private member of the class that you can use directly for
   //     this function, and you should only need one function call.
   //
+  detector->compute(img, *keypoints, *descriptors);
   // ~~~~ end solution
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 }
