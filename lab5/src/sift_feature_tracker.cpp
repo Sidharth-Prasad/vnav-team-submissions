@@ -1,5 +1,5 @@
 #include "sift_feature_tracker.h"
-
+#include <iostream>
 #include <glog/logging.h>
 
 #include <opencv2/calib3d.hpp>
@@ -56,6 +56,7 @@ void SiftFeatureTracker::describeKeypoints(const cv::Mat& img,
   //     There is a private member of the class that you can use directly for
   //     this function, and you should only need one function call.
   //
+  std::cout << "Width: " << descriptors->size().width << ", Height: " << descriptors->size().height << std::flush;
   detector->compute(img, *keypoints, *descriptors);
   // ~~~~ end solution
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -92,7 +93,7 @@ void SiftFeatureTracker::matchDescriptors(const cv::Mat& descriptors_1,
   //
   //     **** TODO: FILL IN HERE ***
   //     Hint: you should be able to do it using one function call on `matcher`
-  //
+  matcher.knnMatchImpl()
   // ~~~~ end solution
 
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
