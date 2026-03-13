@@ -99,7 +99,10 @@ void FeatureTracker::trackFeatures(
   //
   // ~~~~ begin solution
   //
-  //     **** TODO: FILL IN HERE ***
+  cv::Mat descriptors_1;
+  cv::Mat descriptors_2;
+  describeKeypoints(img_1, &keypoints_1, &descriptors_1);
+  describeKeypoints(img_2, &keypoints_2, &descriptors_2);
   //
   // ~~~~ end solution
   //
@@ -122,7 +125,7 @@ void FeatureTracker::trackFeatures(
   //
   // ~~~~ begin solution
   //
-  //     **** TODO: FILL IN HERE ***
+  this->matchDescriptors(descriptors_1, descriptors_2, &matches, &good_matches)
   //
   // ~~~~ end solution
   //
@@ -131,7 +134,8 @@ void FeatureTracker::trackFeatures(
   //
   // ~~~~ begin solution
   //
-  //     **** TODO: FILL IN HERE ***
+  const cv::Mat& out_img;
+  cv::drawMatches(img_1, keypoints_1, img_2, keypoints_2, good_matches, out_img)
   //
   // ~~~~ end solution
   //
@@ -145,7 +149,8 @@ void FeatureTracker::trackFeatures(
   std::pair<std::vector<cv::KeyPoint>, std::vector<cv::KeyPoint>> match_kp_1_kp_2;
   // ~~~~ begin solution
   //
-  //     **** TODO: FILL IN HERE ***
+  std::vector<u_char> inlier_mask;
+  inlierMaskComputation(keypoints_1, keypoints_2, &inlier_mask)
   // Build aligned keypoints for matches
   //
   // ~~~~ end solution

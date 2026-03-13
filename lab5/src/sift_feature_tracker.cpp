@@ -93,7 +93,7 @@ void SiftFeatureTracker::matchDescriptors(const cv::Mat& descriptors_1,
   //
   //     **** TODO: FILL IN HERE ***
   //     Hint: you should be able to do it using one function call on `matcher`
-  matcher.knnMatchImpl()
+  matcher->knnMatch( descriptors1, descriptors2, matches, 2);
   // ~~~~ end solution
 
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -101,7 +101,14 @@ void SiftFeatureTracker::matchDescriptors(const cv::Mat& descriptors_1,
   //   the handout). Make use of the DMatch structure.
 
   // ~~~~ begin solution
-  //
+  for (size_t i = 0; i < matches.size(); i++){
+    if(matches[i].size < 2){
+      continue;
+    }
+    else if(matches[i][0].distance < 0.8f * matches[i][1].distance){
+      good_matches.push_back(matches[i][0]);
+    }
+  }
   //     **** TODO: FILL IN HERE ***
   //     Hint: you need to write a for loop that iterate through all the matches
   //     obtained from the previous step, and perform a check on it to see
