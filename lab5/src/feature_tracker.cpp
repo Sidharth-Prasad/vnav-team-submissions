@@ -125,7 +125,7 @@ void FeatureTracker::trackFeatures(
   //
   // ~~~~ begin solution
   //
-  this->matchDescriptors(descriptors_1, descriptors_2, &matches, &good_matches)
+  this->matchDescriptors(descriptors_1, descriptors_2, &matches, &good_matches);
   //
   // ~~~~ end solution
   //
@@ -134,8 +134,18 @@ void FeatureTracker::trackFeatures(
   //
   // ~~~~ begin solution
   //
-  const cv::Mat& out_img;
-  cv::drawMatches(img_1, keypoints_1, img_2, keypoints_2, good_matches, out_img)
+  cv::Mat img_matches;
+  cv::drawMatches(img_1, keypoints_1, img_2, keypoints_2, good_matches, img_matches, Scalar::all(-1),
+                 Scalar::all(-1), std::vector<char>(), DrawMatchesFlags::NOT_DRAW_SINGLE_POINTS);
+  
+  if (save_images) {
+    filepath = "/home/zengine/vnav/vnav-team-submissions/lab5/";
+    cv::imwrite(filepath + "matches.png",img_matches);
+  }
+  if (true){
+    cv::imshow("Matches", img_matches);
+    waitKey(0);
+  }
   //
   // ~~~~ end solution
   //
@@ -150,7 +160,7 @@ void FeatureTracker::trackFeatures(
   // ~~~~ begin solution
   //
   std::vector<u_char> inlier_mask;
-  inlierMaskComputation(keypoints_1, keypoints_2, &inlier_mask)
+  inlierMaskComputation(keypoints_1, keypoints_2, &inlier_mask);
   // Build aligned keypoints for matches
   //
   // ~~~~ end solution

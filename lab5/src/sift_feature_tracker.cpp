@@ -93,7 +93,7 @@ void SiftFeatureTracker::matchDescriptors(const cv::Mat& descriptors_1,
   //
   //     **** TODO: FILL IN HERE ***
   //     Hint: you should be able to do it using one function call on `matcher`
-  matcher->knnMatch( descriptors1, descriptors2, matches, 2);
+  matcher.knnMatch(descriptors_1, descriptors_2, *matches, 2);
   // ~~~~ end solution
 
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -101,12 +101,14 @@ void SiftFeatureTracker::matchDescriptors(const cv::Mat& descriptors_1,
   //   the handout). Make use of the DMatch structure.
 
   // ~~~~ begin solution
-  for (size_t i = 0; i < matches.size(); i++){
-    if(matches[i].size < 2){
+  for (size_t i = 0; i < matches->size(); i++){
+    const DMatch& best_match = (*matches)[i][0];
+    const DMatch& second_best_match = (*matches)[i][1];
+    if(matches[i].size() < 2){
       continue;
     }
-    else if(matches[i][0].distance < 0.8f * matches[i][1].distance){
-      good_matches.push_back(matches[i][0]);
+    else if(best_match.distance < 0.8f * second_best_match.distance){
+      good_matches->push_back(best_match);
     }
   }
   //     **** TODO: FILL IN HERE ***
