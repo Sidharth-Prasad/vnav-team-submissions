@@ -142,10 +142,11 @@ void FeatureTracker::trackFeatures(
     filepath = "/home/zengine/vnav/vnav-team-submissions/lab5/";
     cv::imwrite(filepath + "matches.png",img_matches);
   }
-  if (true){
-    cv::imshow("Matches", img_matches);
+  if (show_images){
+    cv::imshow("Good Matches", img_matches);
     waitKey(0);
   }
+  
   //
   // ~~~~ end solution
   //
@@ -160,7 +161,13 @@ void FeatureTracker::trackFeatures(
   // ~~~~ begin solution
   //
   std::vector<u_char> inlier_mask;
-  inlierMaskComputation(keypoints_1, keypoints_2, &inlier_mask);
+  for(const auto &match: good_matches){
+    match_kp_1_kp_2.first.push_back(keypoints_1[match.queryIdx]);
+    match_kp_1_kp_2.second.push_back(keypoints_2[match.queryIdx]);
+  }
+  inlierMaskComputation(match_kp_1_kp_2.first, match_kp_1_kp_2.second, &inlier_mask);
+
+
   // Build aligned keypoints for matches
   //
   // ~~~~ end solution
@@ -185,7 +192,14 @@ void FeatureTracker::trackFeatures(
   //
   // ~~~~ begin solution
   //
-  //     **** TODO: FILL IN HERE ***
+  std::vector<char> char_inlier_mask{inlier_mask.begin(), inlier_mask.end()};
+  cv::Mat img_outliers_inliers;
+  cv::drawMatches(img_1, keypoints_1, img_2, keypoints_2, good_matches, img_outliers_inliers, cv::Scalar(0,0,255),
+                 cv::Scalar(0,0,255), std::vector<char>(), DrawMatchesFlags::NOT_DRAW_SINGLE_POINTS);
+  cv::drawMatches(img_1, keypoints_1, img_2, keypoints_2, good_matches, img_outliers_inliers, cv::Scalar(0,255,0),
+                 cv::Scalar(0,255,0), char_inlier_mask, DrawMatchesFlags::NOT_DRAW_SINGLE_POINTS | DrawMatchesFlags::DRAW_OVER_OUTIMG);
+  cv::imshow("Inliers and Outliers", img_outliers_inliers);
+  waitKey(0);
   // ~~~~ end solution
   //
   //   2. Calculate the statistics to fill the table in the handout.
