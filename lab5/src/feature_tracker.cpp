@@ -183,6 +183,12 @@ void FeatureTracker::trackFeatures(
   // ~
   //
   unsigned int num_inliers = 0;  // TODO: FILL IN HERE -- compute number of inliers
+  for(u_char inlier: inlier_mask){
+    if (inlier == 1){
+      num_inliers++;
+    }
+  }
+
   //
   // For this part, you will need to:
   //   1. Draw the inlier (green) and outlier (red) matches in a similar way

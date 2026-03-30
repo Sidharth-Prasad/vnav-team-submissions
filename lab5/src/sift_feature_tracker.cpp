@@ -104,7 +104,7 @@ void SiftFeatureTracker::matchDescriptors(const cv::Mat& descriptors_1,
   for (size_t i = 0; i < matches->size(); i++){
     const DMatch& best_match = (*matches)[i][0];
     const DMatch& second_best_match = (*matches)[i][1];
-    if(matches[i].size() < 2){
+    if((*matches)[i].size() < 2){
       continue;
     }
     else if(best_match.distance < 0.8f * second_best_match.distance){
